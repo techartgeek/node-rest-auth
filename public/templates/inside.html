@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <h1>Member Area</h1>
+        <button type="button" class="btn btn-danger" data-ng-click="logout()">Logout</button>
+    </div>
+    <div class="row">
+        <div class="jumbotron">
+            <div class="container">
+                <p>{{memberinfo}}</p>
+                <p>
+                    <a class="btn btn-default" href="#" role="button" data-ng-click="destroySession()">Destroy token</a>
+                    <a class="btn btn-default" href="#" role="button" data-ng-click="getInfo()">Get Memberinfo</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
