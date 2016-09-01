@@ -1,0 +1,22 @@
+{
+  "name": "node-rest-auth",
+  "description": "REST based authentication in NodeJS",
+  "main": "server.js",
+  "authors": [
+    "Vikas Sharma <vikasharma150880@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/techartgeek/node-rest-auth",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.5.8"
+  }
+}
