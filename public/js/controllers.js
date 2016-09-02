@@ -15,6 +15,11 @@ angular.module('starter')
                 });
             });
         };
+
+        $scope.gotoRegister = function () {
+            $state.go('outside.register');
+        };
+
     })
     .controller('RegisterCtrl', function ($scope, AuthService, $state) {
         $scope.user = {
