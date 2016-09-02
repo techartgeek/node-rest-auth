@@ -1,4 +1,4 @@
-angular.module('starter', [])
+angular.module('starter', ['ui.router'])
     .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
         $stateProvider
             .state('outside', {
