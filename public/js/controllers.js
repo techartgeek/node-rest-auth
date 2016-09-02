@@ -7,7 +7,7 @@ angular.module('starter')
 
         $scope.login = function () {
             AuthService.login($scope.user).then(function (msg) {
-                $scope.go('inside');
+                $state.go('inside');
             }, function (errMsg) {
                 console.log({
                     title: 'Login failed!',
