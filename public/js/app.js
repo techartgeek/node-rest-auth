@@ -1,5 +1,5 @@
 angular.module('starter', [])
-    .config(function ($stateProvider, $urlRouterProvider) {
+    .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
         $stateProvider
             .state('outside', {
                 url: '/outside',
@@ -23,7 +23,7 @@ angular.module('starter', [])
             });
 
         $urlRouterProvider.otherwise('/outside/login');
-    })
+    }])
     .run(function ($rootScope, $state, AuthService, AUTH_EVENTS) {
         $rootScope.$on('$stateChangeStart', function (event, next, nextParams, fromState) {
             if (!AuthService.isAuthenticated()) {
